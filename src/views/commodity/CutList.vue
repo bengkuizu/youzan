@@ -72,7 +72,7 @@
           :page-sizes="[5, 10, 15, 20]"
           :page-size="5"
           layout="total, sizes, prev, pager, next, jumper"
-          :total="hzxapply.length"
+          :total="10"
         ></el-pagination>
       </div>
     </div>
@@ -80,6 +80,7 @@
 </template>
 <script>
 import { mapState, mapActions,mapMutations } from "vuex";
+// import bus from '@/assets/Bus.js' 
 export default {
   data() {
     return {
@@ -89,6 +90,7 @@ export default {
       currentPage2: 2,
       currentPage3: 3,
       currentPage4: 4,
+      cccc:''
     };
   },
   computed: {
@@ -96,7 +98,15 @@ export default {
   },
   mounted() {
     this.getCutList();
+ 
   },
+  // created(){
+  //   // let that = this
+  //   bus.$on('getindex',function(index){//监听
+  //     // that.cccc = index
+  //     console.log(index)
+  //   })
+  // },
   methods: {
     ...mapActions(["getCutList"]),
     ...mapMutations(["updateCutListArr","updateCutDel"]),
@@ -128,8 +138,8 @@ export default {
     },
     handleCurrentChange(val) {
       console.log(`当前页: ${val}`);
-      //传递页码
-      this.updateCutListArr({page:val})
+      //传递页码时需要把下标传过去，否则会有bug
+      this.updateCutListArr({page:val, index:0})
     },
     
     }

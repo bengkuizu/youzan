@@ -39,7 +39,11 @@ export default {
          CutHeader,
          CutList,
     },
-
+    mounted() {
+      console.log(1)
+      console.log('=====', this.$bus)
+    }
+  
 }
 </script>
 <style lang="scss" scoped>
