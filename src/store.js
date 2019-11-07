@@ -8,7 +8,7 @@ Vue.use(Vuex)
 function fetch(api, callback) {
     axios({
         method: "GET",
-        url: 'http://localhost:8080' + api
+        url: 'http://localhost:8082' + api
     }).then(res => {
         let data = null
         if (res.data.err === 0) {

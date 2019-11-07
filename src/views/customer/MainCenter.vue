@@ -1,5 +1,7 @@
 <template>
 	<div class="main">
+		<NavBar></NavBar>
+		<MainRight></MainRight>
 		<div class="header">
 			<span>客户查询</span>
 			<p>帮助和服务</p>
@@ -433,11 +435,11 @@
 <!--  中间日期-->
 
   <div class="end">
-<h4>暂无客户相关信息</h4>
+<MessAge></MessAge>
   </div>
 <!--底部		-->	
 <div class="footer">
-<h4>有赞</h4>
+<!--<h4>有赞</h4>-->
 </div>
 
 
@@ -449,12 +451,17 @@
 
 <script>
 import Add from './Add.vue'
+import MessAge from './MessAge.vue'
+import NavBar from "@/components/NavBar.vue"
+import MainRight from './MainRight.vue'
 export default {
-	components:{
-		Add,
-		
-	},
-    data() {
+ components:{
+    Add,
+    MessAge,
+    NavBar,
+    MainRight
+   },
+    data() {   
       return {      	
   options1: [{
           value_a: '选项1',
@@ -633,7 +640,6 @@ export default {
 		height: 244px;
 		margin-top: 15px;
 		border: 1px solid #d8d8d8;
-		background:#fff;
 	}
 	
 	.end h4{
@@ -645,7 +651,6 @@ export default {
 		height: 60px;
 		width: 953px;
 		margin-top: 60px;
-		background:#fff;
 	}
 	
 	.footer h4{
