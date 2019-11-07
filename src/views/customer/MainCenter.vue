@@ -4,97 +4,10 @@
 			<span>客户查询</span>
 			<p>帮助和服务</p>
 		</div>
-
+<!-- <Add></Add> -->
 		<div class="nav">
 			<div class="top">
- <div>
-    <el-button @click="show4 = !show4">添加客户</el-button>
-
-    <div style="display: flex; margin-top: 20px; height: 100px;">
-      <transition name="el-fade-in-linear">
-        <div v-show="show4" class="box">
-<!--表单-->	<div class="tou">添加客户</div>
-			<div class="zhongjian">
-  <el-row type="flex" class="row-bg">
-<el-col :span="4">客户身份</el-col>
-  <el-col :span="6"> <el-radio v-model="radio" label="1" >非会员</el-radio>
-  <el-radio v-model="radio" label="2">会员</el-radio></el-col>
-</el-row>
- 
-   <el-row type="flex" class="row-bg">
-<el-col :span="4">手机号:</el-col>
-  <el-col :span="6"><el-input v-model="input" placeholder=""></el-input></el-col>
-</el-row>
-
-   <el-row type="flex" class="row-bg">
-<el-col :span="4">姓名:</el-col>
-  <el-col :span="6"><el-input v-model="input" placeholder=""></el-input></el-col>
-</el-row>
- 
-
-  <el-row type="flex" class="row-bg">
-<el-col :span="4">标签</el-col>
-  <el-col :span="6"><el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select></el-col>
-</el-row>
-
-
-  <el-row type="flex" class="row-bg">
-<el-col :span="4">性别:</el-col>
-  <el-col :span="6"> <el-radio v-model="radio" label="3" >男</el-radio>
-  <el-radio v-model="radio" label="4">女</el-radio></el-col>
-</el-row>
-
-
-
-
-
-  <div class="block-2">
-    <span class="demonstration">生日时间:</span>
-    <el-date-picker
-      v-model="value5"
-      type="date"
-      placeholder="开始日期">
-    </el-date-picker>
-  </div>
-  
-  
-  <el-row type="flex" class="row-bg">
-<el-col :span="4">地域</el-col>
-  <el-col :span="6"><el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select></el-col>
-</el-row>
-
-  <el-row type="flex" class="row-bg1">
-<el-col :span="4">备注:</el-col>
-  <el-col :span="6"><el-input
-  type="textarea"
-  :rows="2"
-  placeholder="请输入内容"
-  v-model="textarea">
-</el-input></el-col>
-</el-row>
-
-
-
-			</div>
-        </div>
-      </transition>
-     
-    </div>
-  </div>
+ <Add></Add>
 </div>
 			
 <!--日期-->
@@ -535,7 +448,12 @@
 </template>
 
 <script>
-  export default {
+import Add from './Add.vue'
+export default {
+	components:{
+		Add,
+		
+	},
     data() {
       return {      	
   options1: [{
@@ -656,7 +574,7 @@
   };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main{
 	width: 985px;
 	height: 700px;
@@ -696,7 +614,7 @@
 		
 	}
 	
-	
+
 	
 	.nav .block{
 		float: left;
@@ -715,6 +633,7 @@
 		height: 244px;
 		margin-top: 15px;
 		border: 1px solid #d8d8d8;
+		background:#fff;
 	}
 	
 	.end h4{
@@ -726,6 +645,7 @@
 		height: 60px;
 		width: 953px;
 		margin-top: 60px;
+		background:#fff;
 	}
 	
 	.footer h4{
@@ -820,7 +740,7 @@ overflow: hidden;
 .zhongjian{
 	width: 380px;
 	height: 520px;
-	padding-top: 25px;
+	
 	margin-left: 20px;
 	margin-top: 10px;
 }
