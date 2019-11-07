@@ -5,8 +5,8 @@
    
 
 <el-row type="flex" align="middle">
-  <el-col :span="4 "><div>订单搜索：</div></el-col>
-  <el-col :span="8">
+  <el-col :span="3"><div>订单搜索：</div></el-col>
+  <el-col :span="7">
       <el-select v-model="value" placeholder="订单搜索">
     <el-option
       v-for="item in options"
@@ -16,12 +16,12 @@
     </el-option>
   </el-select>
   </el-col> 
-  <el-col :span="8">
+  <el-col :span="7">
       <el-input v-model="input"  placeholder="请输入内容"></el-input>
   </el-col>
 </el-row>
 <el-row type="flex" align="middle">
-  <el-col :span="4 "><div>下单时间：</div></el-col>
+  <el-col :span="3 "><div>下单时间：</div></el-col>
   <el-col :span="10">
   <div class="block" >
     <el-date-picker
@@ -44,7 +44,7 @@
         <el-button>近7天</el-button>
     </el-col>
     <el-col :span="2">
-        <el-button>近30天</el-button>
+        <el-button class="sanshi">近30天</el-button>
     </el-col>
 </el-row>
 
@@ -149,7 +149,7 @@
   </el-col>
 </el-row>
 
-<el-button>筛选</el-button>
+<el-button @click="selectt">筛选</el-button>
 <el-button>导出</el-button>
  <el-link type="primary">查看已导出列表</el-link> 
  <el-link type="primary">重置筛选条件</el-link>
@@ -159,6 +159,7 @@
  </div>
 </template>
 <script>
+import {mapMutations} from 'vuex'
 export default {
   data() {
     return {
@@ -177,7 +178,7 @@ export default {
         },
         {
           value: "选项4",
-          label: "龙须面收货人手机后四位"
+          label: "收货人手机后四位"
         }
       ],
       value: "",
@@ -223,10 +224,16 @@ export default {
       value2: "",
       value3: ""
     };
+  },
+  methods:{
+    ...mapMutations(['updateSelectt']),
+    selectt(){
+      this.updateSelectt({id:this.input})
+    }
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .wrap {
   background: #ffffff;
   .seacher_list {

@@ -6,10 +6,13 @@
          </el-aside>
           <el-main>
             <span>订单查询</span>
+            <!-- 框框一堆 -->
             <OrderSeacher></OrderSeacher>
+            <!-- 表格一个 -->
             <OrderList></OrderList>
           </el-main>
-          <el-aside width="92px">Aside</el-aside>
+          <!-- 右侧边 -->
+          <el-aside width="92px">帮助</el-aside>
         </el-container>
     </div>
 </template>
@@ -30,6 +33,7 @@ export default {
 .el-main {
   color: #333;
   width: 975px;
+  min-height: 900px;
   background-color: #f7f8fa;
   span{
     font-size: 14px;
@@ -42,7 +46,7 @@ export default {
 }
 
 .el-aside {
-  background-color:#000;
+  background-color:#fff;
   color: #333;
   text-align: center;
   line-height: 200px;
