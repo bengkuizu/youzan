@@ -1,6 +1,6 @@
 <template>
   <div class="dynamic">
-    <el-tabs type="border-card">
+    <el-tabs type="border-card" stretch='	false'>
       <el-tab-pane label="全部事项">
         <div class="oder">
           <div class="oder_top">
@@ -94,14 +94,15 @@ export default {
   .el-tabs {
     width: 720px;
     height: 100%;
-    overflow: auto;
+    overflow:auto;
     .oder {
-      width: 700px;
+      width: 710px;
       height: 88px;
       background: rgba(247, 248, 250, 1);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      overflow: hidden;
       .oder_top{
          width: 700px;
          height: 150px;
@@ -122,7 +123,7 @@ export default {
       margin-top: 10px; 
      >div{
        display: flex;
-       justify-content: space-between;
+       justify-content:flex-start ;
        font-size: 13px;
          >span:nth-child(1){
          font-size: 18px;

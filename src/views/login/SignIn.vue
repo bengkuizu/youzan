@@ -1,6 +1,6 @@
 <template>
   <div class="sign">
-    <el-input v-model="user" placeholder="注册时填写的手机号"></el-input>
+    <el-input v-model="user" placeholder="请输入用户名/手机号"></el-input>
     <input type="password" placeholder="请输入密码" v-model="pw"/>
       <el-button @click="login">登录</el-button>
   </div>
@@ -52,9 +52,10 @@ export default {
     background: white;
     margin-top: 30px;
     color:rgba(220,223,230,1);
-    &:placeholder{
-        color: white;
-    }
+   
+  }
+  ::-webkit-input-placeholder{
+    color:rgba(192,196,204,1);
   }
 }
 </style>

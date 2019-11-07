@@ -2,7 +2,7 @@
   <div class="intime">
     <div class="top">
       <span>实时概况</span>
-      <span>更新时间：2019-11-05 19:46:25</span>
+      <span>更新时间：2019-11-08 13:46:25</span>
       <span class="el-icon-refresh"></span>
       <span class="el-icon-view"></span>
       <span>编辑</span>
@@ -26,6 +26,7 @@
   </div>
 </template>
 <script>
+
 import { mapState,mapActions} from 'vuex'
 export default {
    computed:{

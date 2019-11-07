@@ -89,9 +89,13 @@ export default {
         }
         ul{
             margin: 10px 0 0 0;
+            overflow: hidden;
              li{
             font-size: 12px;
-            padding: 10px 0 0 0;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: flex-start;
+
         }
         }
     }
