@@ -87,7 +87,9 @@
   </div>
 </template>
 <script>
+
 import {mapMutations} from 'vuex'
+// import bus from '@/assets/Bus.js' //引入bus总线
 export default {
   data() {
     return {
@@ -115,9 +117,13 @@ export default {
     handleClick(tab, event) {
       console.log(tab, event);
       this.updateCutListArr({index:tab.index})
+      // bus.$emit('getindex',tab.index)
+      // console.log(this.$bus)
       // console.log({index:tab.index})
     },
-
+    // ccccc(){
+    //   bus.$emit('getindex','tab.index')
+    // },
     onSubmit() {
       console.log("submit!");
     },
@@ -143,7 +149,10 @@ export default {
       this.updateScreen({id:this.formInline.user})
     },
     mounted(){
+      console.log(1)
+      console.log('=====', this.$bus)
       this.btnScreen()
+      
     }
     
   }
