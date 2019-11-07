@@ -1,0 +1,132 @@
+{
+    "err": 0,
+    "msg": "success",
+    "data":  [
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "衣服",
+                "price":120,
+                "Visits":100,
+                "Views":80,
+                "inventory":79,
+                "gross_sales":343,
+                "data":"2019-11-04 19:38:07",
+                "id":0,
+                "state":1
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "裤子",
+                "price":100,
+                "Visits":300,
+                "Views":20,
+                "inventory":90,
+                "gross_sales":7878,
+                "data":"2019-11-05 19:48:07",
+                "id":1,
+                "state":1
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "鞋子",
+                "price":234,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":2,
+                "state":2
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "鞋子",
+                "price":767,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":3,
+                "state":3
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "鞋子",
+                "price":324,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":4,
+                "state":1
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "嘻哈",
+                "price":67,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":5,
+                "state":1
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "哈希",
+                "price":65,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":6,
+                "state":1
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "班v",
+                "price":132,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":7,
+                "state":2
+
+              },
+              {
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "uterine",
+                "price":65,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":8,
+                "state":3
+
+              },{
+                "img": "https://img.yzcdn.cn/upload_files/2018/01/22/FnlHRufXMtUI_AbAEP0tux_nDL1T.png?imageView2/2/w/120/h/120/q/75/format/webp",
+                "commodity": "儿童",
+                "price":68,
+                "Visits":3020,
+                "Views":2022,
+                "inventory":80,
+                "gross_sales":3032,
+                "data":"2017-11-05 19:48:07",
+                "id":9,
+                "state":1
+              }
+          ]
+        }
