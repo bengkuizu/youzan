@@ -1,6 +1,6 @@
 <template>
   <div class="dynamic">
-    <el-tabs type="border-card" stretch='	false'>
+    <el-tabs type="border-card">
       <el-tab-pane label="全部事项">
         <div class="oder">
           <div class="oder_top">

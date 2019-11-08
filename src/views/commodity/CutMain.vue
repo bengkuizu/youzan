@@ -39,13 +39,13 @@
         <el-col :span="8">
           <el-form-item label="总销量: ">
             <el-col :span="11" style="width:100px">
-              <el-input v-model="formInline.user"></el-input>
+              <el-input v-model="formInline.cccccc"></el-input>
             </el-col>
             <el-col :span="2" style="width:10px">
               <span>-</span>
             </el-col>
             <el-col :span="11" style="width:100px">
-              <el-input v-model="formInline.user"></el-input>
+              <el-input v-model="formInline.cccccc"></el-input>
             </el-col>
           </el-form-item>
         </el-col>
@@ -53,13 +53,13 @@
         <el-col :span="8">
           <el-form-item label="价格: ">
             <el-col :span="11" style="width:100px">
-              <el-input v-model="formInline.user"></el-input>
+              <el-input v-model="formInline.dddddd"></el-input>
             </el-col>
             <el-col :span="2" style="width:10px">
               <span>-</span>
             </el-col>
             <el-col :span="11" style="width:100px">
-              <el-input v-model="formInline.user"></el-input>
+              <el-input v-model="formInline.dddddd"></el-input>
             </el-col>
           </el-form-item>
         </el-col>
@@ -96,7 +96,9 @@ export default {
       activeName: "first",
       formInline: {
         user: "",
-        region: ""
+        region: "",
+        cccccc:"",
+        dddddd:""
       },
       form: {
         name: "",

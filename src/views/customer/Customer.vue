@@ -1,31 +1,28 @@
 <template>
-    <div class="all">
-    
-    <NavBar></NavBar>
-	<MainCenter></MainCenter>
-    <MainRight></MainRight>
+  <div class="all">
+    <!-- <NavBar></NavBar> -->
+    <MainCenter></MainCenter>
+    <!-- <MainRight></MainRight> -->
     <Add></Add>
-    <!--<MessAge></MessAge>-->
-    </div>
+  </div>
 </template>
 <script>
-//import NavBar from "@/components/NavBar.vue"
-import MainCenter from './MainCenter.vue'
-//import MainRight from './MainRight.vue'
-import Add from './Add.vue'
-//import MessAge from './MessAge.vue'
+import NavBar from "@/components/NavBar.vue";
+import MainCenter from "./MainCenter.vue";
+import MainRight from "./MainRight.vue";
+import Add from "./Add.vue";
+
 export default {
-    components:{
-//      NavBar,
-        MainCenter,
-//      MainRight,
-        Add,
-//      MessAge
-    }
-}
+  components: {
+    NavBar,
+    MainCenter,
+    MainRight,
+    Add
+  }
+};
 </script>
 <style lang="scss" scoped>
-.all{
-	background: #f7f8fa;
+.all {
+  background: #f7f8fa;
 }
 </style>

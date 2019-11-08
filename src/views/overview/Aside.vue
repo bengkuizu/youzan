@@ -22,7 +22,7 @@
             <p>更多</p>
             <ul v-for="(item,index) in ramList " :key="index">
                 <li><span v-text="item.date">10/31</span> <span v-text="item.content">个性化推荐商品功能优化</span></li>
-           
+
             </ul>
 
         </div>
