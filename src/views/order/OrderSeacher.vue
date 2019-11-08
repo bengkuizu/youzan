@@ -233,7 +233,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .wrap {
   background: #ffffff;
   .seacher_list {

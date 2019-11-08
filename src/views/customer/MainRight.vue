@@ -5,7 +5,7 @@
 <script>
 </script>
 
-<style>
+<style lang="scss" scoped>
 	.MainRight{
 		background: yellow;
 		width: 186px;

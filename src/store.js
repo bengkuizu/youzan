@@ -139,7 +139,7 @@ const store = new Vuex.Store({
                 }
 
             })
-            state.cutListArr1 = arr
+            state.hzxapply = arr
         },
         //何展成
         updataList(state, payload) {
@@ -235,7 +235,7 @@ const store = new Vuex.Store({
             })
         },
 
-        //hzx
+        //黄振祥
         //商品数据  调用fetch接口，在自定义方法和数据提交给mutations
         getCutList(store) {
             fetch('/db/goods.json', data => {

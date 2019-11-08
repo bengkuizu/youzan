@@ -574,7 +574,7 @@ export default {
   };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main{
 	width: 985px;
 	height: 700px;
