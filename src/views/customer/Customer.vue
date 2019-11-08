@@ -5,22 +5,22 @@
 	<MainCenter></MainCenter>
     <MainRight></MainRight>
     <Add></Add>
-    <MessAge></MessAge>
+    <!--<MessAge></MessAge>-->
     </div>
 </template>
 <script>
-import NavBar from "@/components/NavBar.vue"
+//import NavBar from "@/components/NavBar.vue"
 import MainCenter from './MainCenter.vue'
-import MainRight from './MainRight.vue'
-import MessAge from './MessAge.vue'
-
+//import MainRight from './MainRight.vue'
+import Add from './Add.vue'
+//import MessAge from './MessAge.vue'
 export default {
     components:{
-        NavBar,
+//      NavBar,
         MainCenter,
-        MainRight,
+//      MainRight,
         Add,
-		MessAge
+//      MessAge
     }
 }
 </script>

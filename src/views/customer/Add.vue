@@ -87,7 +87,7 @@
         <el-button type="primary" @click="add">确 定</el-button>
       </div>
     </el-dialog>
-    <span class="fans"></span>
+    <span class="fans">粉丝管理</span>
   </div>
 </template>
 
